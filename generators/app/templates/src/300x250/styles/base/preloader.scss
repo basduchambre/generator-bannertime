@@ -10,8 +10,8 @@ $preloader-width: 5px;
 
   .circle {
     animation: spin 0.5s linear infinite;
-    border: $preloader-width solid #ddd;
-    border-bottom-color: #333;
+    border: $preloader-width solid rgba(0, 0, 0, 0.1);
+    border-bottom-color: #6c63ff;
     border-radius: 50%;
     height: $preloader-size;
     left: 50%;

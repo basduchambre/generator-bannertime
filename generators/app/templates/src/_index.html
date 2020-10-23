@@ -2,13 +2,17 @@
 <html lang="en-gb">
   <head>
     <meta charset="utf-8">
-    <title>Preview</title>
+    <title>Growise for <%= clientName %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="base/images/favicon.ico">
     <link rel="stylesheet" href="base/styles/style.css">
   </head>
   <body>
     <div class="sidebar">
-      <img src="base/images/logo.png" class="logo">
+      <a href="//growise.pro" target="_blank">
+        <img src="base/images/logo.png" class="logo" width="200" />
+      </a>
+      <h3 class="client-name"><%= clientName %></h3>
       <div class="menu"></div>
       <ul>
         <li><a href="<%= bannerName %>-300x250/" class="done"><%= bannerName %>-300x250</a></li>

@@ -11,20 +11,25 @@ module.exports = function prompts() {
   return this.prompt([{
     type: 'input',
     name: 'bannerName',
-    message: 'What is the name of the banner? (kebab-case):',
+    message: 'What is the name of the campaign?:',
     default: this.appname,
     filter: answer => slugify(answer)
   }, {
     type: 'input',
     name: 'bannerDesc',
     message: 'Describe the banner:',
-    default: 'Its Duncan Bannertime!'
+    default: 'Growise creates the best banners'
+  }, {
+    type: 'input',
+    name: 'clientName',
+    message: 'Enter the name of the client:',
+    default: 'Growise customer'
   }, {
     type: 'list',
     name: 'bannerType',
     message: 'What type of banner is it?',
-    choices: ['Studio (formerly Doubleclick Studio)', 'Sizmek', 'Adform', 'Campaign Manager / CM', 'Atlas', 'Flashtalking', 'IAB', 'Google Ads / GDA / GDN', 'None'],
-    default: 'Studio (formerly Doubleclick Studio)'
+    choices: ['Studio (formerly Doubleclick Studio)', 'Campaign Manager / CM', 'Google Ads / GDA / GDN', 'None'],
+    default: 'Google Ads / GDA / GDN'
   }, {
     type: 'input',
     name: 'bannerRepo',

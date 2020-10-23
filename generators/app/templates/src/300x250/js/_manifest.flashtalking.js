@@ -3,5 +3,5 @@ FT.manifest({
   "width": <%= bannerWidth %>,
   "height": <%= bannerHeight %>,
   "clickTagCount": 1,
-  "hideBrowsers":["ie8", "ie9"]
+  "hideBrowsers": ["ie8", "ie9"]
 });

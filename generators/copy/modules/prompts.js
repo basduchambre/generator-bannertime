@@ -36,8 +36,8 @@ module.exports = function prompts() {
     type: 'list',
     name: 'bannerType',
     message: 'What type of banner is it?',
-    choices: ['Studio (formerly Doubleclick Studio)', 'Sizmek', 'Adform', 'Campaign Manager / CM', 'Atlas', 'Flashtalking', 'IAB', 'Google Ads / GDA / GDN', 'None'],
-    default: 'Studio (formerly Doubleclick Studio)'
+    choices: ['Studio (formerly Doubleclick Studio)', 'Campaign Manager / CM', 'Google Ads / GDA / GDN', 'None'],
+    default: 'Google Ads / GDA / GDN'
   }, {
     when: response => response.bannerType === 'Studio (formerly Doubleclick Studio)',
     type: 'confirm',

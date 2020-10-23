@@ -41,6 +41,7 @@ module.exports = function files() {
 
   const props = {
     bannerName: this.props.bannerName,
+    clientName: this.props.clientName,
     bannerDesc: this.props.bannerDesc,
     bannerType: this.props.bannerType,
     bannerWidth: 300,
